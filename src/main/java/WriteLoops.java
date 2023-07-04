@@ -47,7 +47,7 @@ public class WriteLoops {
         // calling
 //        w = w + 1;
         // each time through the loop
-        for(int i=21; i<=10; i++) {
+        for(int i=21; i<=31; i++) {
             w = w + 1;
         }
         return w;
@@ -60,7 +60,7 @@ public class WriteLoops {
         // calling
 //        w = w + 1;
         // each time through the loop
-        for(int i=100; i>=0; i--) {
+        for(int i=100; i>0; i--) {
             w = w + 1;
         }
         return w;
@@ -173,7 +173,7 @@ public class WriteLoops {
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public int checkGameScore() {
+    public boolean checkGameScore() {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
@@ -189,7 +189,7 @@ public class WriteLoops {
 //            w = w + 1;
             // each time through the inner loop
         
-        return w; // >= 3;
+        return w>=3; // >= 3;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -210,7 +210,7 @@ public class WriteLoops {
 //            w = w + 1;
             // each time through the inner loop
 
-        return w >= 3;
+        return w > 3;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
@@ -224,7 +224,7 @@ public class WriteLoops {
             waitFor(5);
             if((!serverIsRunning())) {
                 sendEmergencyText("Help!", adminPhoneNumber);
-                tryServerRestart();
+                tryServerRestart("restart", adminPhoneNumber);
             }
             w = w + 1;
         }

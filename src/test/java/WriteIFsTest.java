@@ -1,5 +1,3 @@
-//package src.test.java;
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -8,7 +6,7 @@ import org.junit.Test;
 import src.main.java.WriteIFs;
 
 /**
- * The test class src.test.java.WriteIFsTest.
+ * The test class WriteIFsTest.
  *
  * @author  kyounger
  * @version 1.3
@@ -19,7 +17,7 @@ public class WriteIFsTest
     private static final double _0_04 = 0.04;
 
     /**
-     * Default constructor for test class src.test.java.WriteIFsTest
+     * Default constructor for test class WriteIFsTest
      */
     public WriteIFsTest()
     {
